@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .menu-button {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .menu {
+            display: none;
+            position: absolute;
+            left: 10px;
+            top: 40px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="menu-button" onclick="toggleMenu()">&#9776;</button>
+        <h1>TENTANG KAMI</h1>
+        <div class="menu" id="menu">
+            <a href="index.html">Beranda</a>
+            <a href="Hubungi-kami.html">Hubungi Kami</a>
+        </div>
+    </header>
+    <div class="content">
+        <h2> Tentang "KUMPULAN LAGU NOAH TERBAIK SEPANJANG MASA"</h2>
+        <P style="text-align: justify;">Selamat datang di website kami, sumber nomor satu anda untuk semua lagu terbaik NOAH. Kami berdedikasi untuk memberikan anda lagu terbaik dari NOAH, dengan penekanan pada kenyamanan, kelengkapan, dan kemudahan penggunaan</P>
+        <p style="text-align: justify;">Didirikan pada tahun 2024, website kami telah berkembang pesat sejak awal berdirinya. Ketika kami pertama kali memulai, hasrat kami terhadap lagu-lagu NOAH mendorong kami untuk memulai situs web ini</p>
+        <p style="text-align: justify;">Kami harap Anda menikmati situs web kami sama seperti kami menikmati menawarkannya kepada Anda. Jika Anda memiliki pertanyaan atau komentar, jangan ragu untuk menghubungi kami.</p>
+        <p style="text-align: justify;">Hormat kami, <br>Owner ~ YUKI NAGANO MONDJOMPI</p>
+    </div>
+
+    <footer>
+        <p>Ikuti Sosial Media Kami</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.jpg" alt="Instagram"></a>
+            <a href="https://www.tiktok.com" target="_blank"><img src="tiktok-icon.jpg" alt="TikTok"></a>
+        </div>
+        <p>&copy; 2024 Kumpulan Lagu Noah. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'bolck') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';    
+            }
+        }
+    </script>
+</body>
+</html>
